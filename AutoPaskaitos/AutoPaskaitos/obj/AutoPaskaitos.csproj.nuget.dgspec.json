@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gediminas.kvedaravic\\source\\repos\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj": {}
+    "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gediminas.kvedaravic\\source\\repos\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj": {
+    "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gediminas.kvedaravic\\source\\repos\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj",
+        "projectUniqueName": "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj",
         "projectName": "AutoPaskaitos",
-        "projectPath": "C:\\Users\\gediminas.kvedaravic\\source\\repos\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj",
+        "projectPath": "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj",
         "packagesPath": "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gediminas.kvedaravic\\source\\repos\\AutoPaskaitos\\AutoPaskaitos\\obj\\",
+        "outputPath": "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\AutoPaskaitos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
