@@ -18,7 +18,7 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.Url = "https://rahulshettyacademy.com/#/index";
+            driver.Url = "https://wolt.com/lt/ltu/?gdpr=&tld=lt&fbclid=IwAR1pGrd-I4MV8KPUB-T2UQsQU0w_vvfOHWJAiD0x46JJSh4olwdpN-2VB5M";
         }
         [Test]
         public void PrisijungimoTestas()
@@ -35,23 +35,8 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
         [Test]
         public void PatikrinkArPasikeiteKalba()
         {
-            driver.FindElement(By.CssSelector("body > app-root > div > header > div.header-top > div > div > div.top-right.clearfix > div:nth-child(3) > a")).Click();
-            driver.FindElement(By.Id("user_email")).SendKeys("gediminaskvedaravicius@yahoo.com");
-            driver.FindElement(By.Id("user_password")).SendKeys("Labas123@");
-            driver.FindElement(By.Name("commit")).Click();
+            driver.FindElement(By.CssSelector("#app > div > div > div:nth-child(2) > div:nth-child(5) > div > div.ModalWithAnimationWrapper__root___3bsCj > div > div > div > div > div.ConsentsBanner__buttons___1Lyem > div:nth-child(2) > button")).Click();
             Thread.Sleep(3000);
-            Assert.IsTrue(driver.FindElement(By.CssSelector("body > div.view - school > div > div > div > div > div > div.row > div > div")).Displayed);
-
-            Thread.Sleep(3000);
-
-            driver.FindElement(By.Id("user_email")).SendKeys("gediminaskvedaravicius@yahoo.com");
-            driver.FindElement(By.Id("user_email")).SendKeys("gediminaskvedaravicius@yahoo.com");
-            driver.FindElement(By.Id("user_email")).SendKeys("gediminaskvedaravicius@yahoo.com");
-            driver.FindElement(By.Id("user_email")).SendKeys("gediminaskvedaravicius@yahoo.com");
-            driver.FindElement(By.Id("user_email")).SendKeys("gediminaskvedaravicius@yahoo.com");
-            driver.FindElement(By.Id("user_email")).SendKeys("gediminaskvedaravicius@yahoo.com");
-
-
         }
         [TearDown]
         public void poKiekvienoTesto()

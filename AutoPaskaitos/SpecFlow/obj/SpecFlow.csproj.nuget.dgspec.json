@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\SpecFlow\\SpecFlow.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\SpecFlow\\SpecFlow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\SpecFlow\\SpecFlow.csproj",
+        "projectName": "SpecFlow",
+        "projectPath": "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\SpecFlow\\SpecFlow.csproj",
+        "packagesPath": "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\SpecFlow\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gediminas.kvedaravic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.5.14, )"
+            },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.5.186, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

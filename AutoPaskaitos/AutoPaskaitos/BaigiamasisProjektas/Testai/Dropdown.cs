@@ -1,5 +1,6 @@
 ﻿using AutoPaskaitos.BaigiamasisProjektas.Puslapiai;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,10 +18,45 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
             dropdownPuslapis = new DropdownPuslapis(driver);
         }
         [Test]
-        public void PasirinkPirma()
+        public void PasirinkSekmadieni()
         {
-            dropdownPuslapis.PasirinktiElementa();
+            string pirmadienis = "Monday";
+            string antradienis = "Tuesday";
+            string treciadienis = "Wednesday";
+
+            dropdownPuslapis
+                .nunaviguotiIDropdownPuslapi()
+                .PasirinktiElementaPagalText(pirmadienis)
+                .PatikrinkArAtsiradesTekstasTeisingas($"Day selected :- {pirmadienis}");
             Thread.Sleep(3000);
+            try 
+            {
+                dropdownPuslapis
+                .PasirinktiElementaPagalText("Betkas")
+                .PatikrinkArAtsiradesTekstasTeisingas($"Day selected :- {treciadienis}");
+            }
+            catch(WebDriverException)
+            {
+
+            }
+            
+            Thread.Sleep(3000);
+            dropdownPuslapis
+                .PasirinktiElementaPagalText(treciadienis)
+                .PatikrinkArAtsiradesTekstasTeisingas($"Day selected :- {treciadienis}");
+            Thread.Sleep(3000);
+
+        }
+        [Test]
+        public void PasirinkPirmadieni()
+        {
+            string savaitesDiena = "Monday";
+
+            dropdownPuslapis
+                .nunaviguotiIDropdownPuslapi()
+                .PasirinktiElementaPagalText(savaitesDiena)
+                .PatikrinkArAtsiradesTekstasTeisingas($"Day selected :- {savaitesDiena}");
+
         }
     }
 }

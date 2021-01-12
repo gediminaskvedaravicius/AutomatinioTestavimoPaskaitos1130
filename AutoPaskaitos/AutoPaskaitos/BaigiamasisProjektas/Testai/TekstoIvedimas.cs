@@ -1,6 +1,6 @@
 ﻿using AutoPaskaitos.BaigiamasisProjektas.Puslapiai;
 using NUnit.Framework;
-
+using System.Threading;
 
 namespace AutoPaskaitos.BaigiamasisProjektas.Testai
 {
@@ -19,9 +19,11 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
             string irasomasTekstas = "Tekstas";
 
             ivedimoLaukuPuslapis
+                .paspauskAntSimpleFormDemoNavigacijos()
                 .IrasytiTeksta(irasomasTekstas)
                 .PaspauskSpausdinimoMygtuka()
                 .PatikrinkAtspausdintaTeksta(irasomasTekstas);
+            Thread.Sleep(3000);
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9TFpL6TkKOTxhNAycalwUUOgFhfYY5dUHsYUqFD6UFZuwc4tc++DID5ooZkJwMsEg3q283bXMwBRSuIVHelw1w==",
+  "dgSpecHash": "z9Jhkhrkx9mhhNOeTigMyqK3ECrgh/gqOE/TuObRt64dtnkOJI5O9lL7jjCT4rIiaucPW3Oc+36SVam8E4DEeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\gediminas.kvedaravic\\Desktop\\AutomatinioTestavimoPaskaitos1130\\AutomatinioTestavimoPaskaitos1130\\AutoPaskaitos\\AutoPaskaitos\\AutoPaskaitos.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
     "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
     "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\selenium.webdriver.chromedriver\\87.0.4280.8800\\selenium.webdriver.chromedriver.87.0.4280.8800.nupkg.sha512",
+    "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\selenium.webdriver.geckodriver\\0.28.0\\selenium.webdriver.geckodriver.0.28.0.nupkg.sha512",
     "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\gediminas.kvedaravic\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",

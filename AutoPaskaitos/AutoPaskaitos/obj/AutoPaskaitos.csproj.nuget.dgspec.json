@@ -63,6 +63,10 @@
               "target": "Package",
               "version": "[87.0.4280.8800, )"
             },
+            "Selenium.WebDriver.GeckoDriver": {
+              "target": "Package",
+              "version": "[0.28.0, )"
+            },
             "nunit": {
               "target": "Package",
               "version": "[3.12.0, )"

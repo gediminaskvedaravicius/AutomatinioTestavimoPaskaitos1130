@@ -8,6 +8,8 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Puslapiai
     {
         public IvedimoLaukuPuslapis(IWebDriver driver) : base(driver) { }
 
+        private IWebElement inputFormsMygtukas => driver.FindElement(By.LinkText("Input Forms"));
+        private IWebElement simpleFormDemoMygtukas => driver.FindElement(By.LinkText("Simple Form Demo"));
         private IWebElement tekstoIrasymoLaukas => driver.FindElement(By.Id("user-message"));
         private IWebElement spausdinimoMygtukas => driver.FindElement(By.CssSelector("#get-input button"));
         private IWebElement atspausdintasTekstas => driver.FindElement(By.Id("display"));
@@ -16,6 +18,12 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Puslapiai
         private IWebElement skaiciavimoMygtukas => driver.FindElement(By.CssSelector("#gettotal button"));
         private IWebElement apskaiciuotaSuma => driver.FindElement(By.Id("displayvalue"));
 
+        public IvedimoLaukuPuslapis paspauskAntSimpleFormDemoNavigacijos()
+        {
+            inputFormsMygtukas.Click();
+            simpleFormDemoMygtukas.Click();
+            return this;
+        }
         public IvedimoLaukuPuslapis IrasytiTeksta(string irasomasTekstas)
         {
             tekstoIrasymoLaukas.SendKeys(irasomasTekstas);
