@@ -16,17 +16,20 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Puslapiai
         private IWebElement skaiciavimoMygtukas => driver.FindElement(By.CssSelector("#gettotal button"));
         private IWebElement apskaiciuotaSuma => driver.FindElement(By.Id("displayvalue"));
 
-        public void IrasytiTeksta()
+        public IvedimoLaukuPuslapis IrasytiTeksta(string irasomasTekstas)
         {
-            tekstoIrasymoLaukas.SendKeys("Tekstas");
+            tekstoIrasymoLaukas.SendKeys(irasomasTekstas);
+            return this;
         }
-        public void PaspauskSpausdinimoMygtuka()
+        public IvedimoLaukuPuslapis PaspauskSpausdinimoMygtuka()
         {
             spausdinimoMygtukas.Click();
+            return this;
         }
-        public void PatikrinkAtspausdintaTeksta()
+        public IvedimoLaukuPuslapis PatikrinkAtspausdintaTeksta(string tekstasKurioTikiuosi)
         {
-            Assert.AreEqual("Tekstas", atspausdintasTekstas.Text);
+            Assert.AreEqual(tekstasKurioTikiuosi, atspausdintasTekstas.Text);
+            return this;
         }
         public void IrasykPirmaSkaiciu()
         {

@@ -12,14 +12,16 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
         public void PriesKiekvienaTesta()
         {
             ivedimoLaukuPuslapis = new IvedimoLaukuPuslapis(driver);
-
         }
         [Test]
         public void RodykZinute()
         {
-            ivedimoLaukuPuslapis.IrasytiTeksta();
-            ivedimoLaukuPuslapis.PaspauskSpausdinimoMygtuka();
-            ivedimoLaukuPuslapis.PatikrinkAtspausdintaTeksta();
+            string irasomasTekstas = "Tekstas";
+
+            ivedimoLaukuPuslapis
+                .IrasytiTeksta(irasomasTekstas)
+                .PaspauskSpausdinimoMygtuka()
+                .PatikrinkAtspausdintaTeksta(irasomasTekstas);
         }
     }
 }

@@ -13,10 +13,11 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
         public void priesKiekvienaTesta()
         {
             driver = new ChromeDriver();
-            driver.Url = "https://www.seleniumeasy.com/test/basic-first-form-demo.html";
             driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(120);
-            driver.FindElement(By.Id("at-cv-lightbox-close")).Click();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Url = "https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html";
+            // papildomas zingsnis siam puslapiui
+           // driver.FindElement(By.Id("at-cv-lightbox-close")).Click();
         }
         [TearDown]
         public void poKiekvienoTesto()
