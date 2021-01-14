@@ -17,13 +17,15 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
         public void RodykZinute()
         {
             string irasomasTekstas = "Tekstas";
-
+            PadarykScreenshotaJeiguTestasFailed();
             ivedimoLaukuPuslapis
                 .paspauskAntSimpleFormDemoNavigacijos()
-                .IrasytiTeksta(irasomasTekstas)
+                .IrasytiTeksta("Tekstas")
                 .PaspauskSpausdinimoMygtuka()
-                .PatikrinkAtspausdintaTeksta(irasomasTekstas);
+                .PatikrinkAtspausdintaTeksta("Tekstasx");
             Thread.Sleep(3000);
+            
+           
         }
     }
 }

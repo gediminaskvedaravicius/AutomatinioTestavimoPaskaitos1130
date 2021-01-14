@@ -61,6 +61,7 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
             Actions builder = new Actions(driver);
             builder.MoveToElement(driver.FindElement(By.CssSelector(".dog > .title > a"))).Build().Perform();
             driver.FindElement(By.LinkText("Maistas ir skanėstai")).Click();
+           
             Thread.Sleep(3000);
 
             driver.FindElement(By.CssSelector(".product_element:nth-child(1) .btn")).Click();
@@ -77,6 +78,19 @@ namespace AutoPaskaitos.BaigiamasisProjektas.Testai
 
             Assert.AreEqual("PAKUOTĖ\r\n200 g", driver.FindElement(By.CssSelector(".item:nth-child(1) .wrp > .item_name")).Text);
             Assert.AreEqual("SUMA\r\n1,43 €\r\n1,79 €", driver.FindElement(By.CssSelector(".item:nth-child(1) .wrp > .price")).Text);
+
+            if(driver.FindElement(By.CssSelector(".item:nth-child(1) .wrp > .price")).Text.Contains("1,43 €"))
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+
+            string pavyzdys = "1,43$";
+            pavyzdys.Replace(",", ".");
+
         }
 
         [TearDown]
